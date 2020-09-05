@@ -25,12 +25,14 @@
             methods: {
                 list:function(){
                     var url = "products/"+pid+"/"+ this.uri;
+                    console.info(url);
                     axios.get(url).then(function(response) {
                         vue.beans = response.data;
                     });
                 },
                 getProduct:function(pid){
                     var url = "products/"+pid;
+                    console.info(url);
                     axios.get(url).then(function(response) {
                         vue.product = response.data;
                         vue.category = vue.product.category;

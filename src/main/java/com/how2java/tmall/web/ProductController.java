@@ -29,7 +29,7 @@ public class ProductController {
     
     @GetMapping("/products/{id}")
     public Product get(@PathVariable("id") int id) throws Exception {
-    	Product bean=productService.get(id);
+        Product bean=productService.get(id);
     	return bean;
     }
     

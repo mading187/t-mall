@@ -7,8 +7,11 @@
 <script>
     $(function(){
         var pid = getUrlParms("pid");
+        console.info(pid);
         var data4Vue = {
             uri:'productImages',
+//            singleProductImages: [{id: 10202,type: "single"},{id: 10202,type: "single"},{id: 10202,type: "single"}],
+//            detailProductImages: [{id: 10200,type: "detail"}],
             singleProductImages: [],
             detailProductImages: [],
             product: '',
@@ -31,19 +34,23 @@
                     var url = "products/"+pid;
                     axios.get(url).then(function(response) {
                         vue.product = response.data;
+                        console.
                         vue.category = vue.product.category;
                     })
                 },
                 listSingles:function(start){
                     var url =  "products/"+pid+"/"+this.uri+"?type=single";
                     axios.get(url).then(function(response) {
+
                         vue.singleProductImages = response.data;
+                        console.info(vue.singleProductImages)
                     });
                 },
                 listDetails:function(start){
                     var url =  "products/"+pid+"/"+this.uri+"?type=detail";
                     axios.get(url).then(function(response) {
                         vue.detailProductImages = response.data;
+                        console.info(vue.detailProductImages)
                     });
                 },
                 addSingle: function () {
@@ -86,6 +93,7 @@
                     });
                 },
                 getSingleFile: function (event) {
+//                    console.info(event.target.files[0]);
                     this.singleFile = event.target.files[0];
                 },
                 getDetailFile: function (event) {
