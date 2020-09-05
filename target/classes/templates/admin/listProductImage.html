@@ -15,7 +15,7 @@
             singleProductImages: [],
             detailProductImages: [],
             product: '',
-            category:[],
+            category:'',
             singleFile:'',
             detailFile:''
         };
@@ -34,7 +34,6 @@
                     var url = "products/"+pid;
                     axios.get(url).then(function(response) {
                         vue.product = response.data;
-                        console.
                         vue.category = vue.product.category;
                     })
                 },
