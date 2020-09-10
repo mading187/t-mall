@@ -2,116 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6c7d738-88ea-436d-81f3-df3e7a72e716" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/config/WebMvcConfigurer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/interceptor/LoginInterceptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/fore/cart.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/include/fore/cart/cartPage.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/include/fore/modal4deleteConfirm.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/elasticsearch/nodes/0/_state/global-69.st" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/Application.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/comparator/ProductAllComparator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/comparator/ProductDateComparator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/comparator/ProductPriceComparator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/comparator/ProductReviewComparator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/comparator/ProductSaleCountComparator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/config/CORSConfiguration.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/dao/CategoryDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/dao/OrderDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/dao/OrderItemDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/dao/ProductDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/dao/ProductImageDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/dao/PropertyDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/dao/PropertyValueDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/dao/ReviewDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/dao/UserDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/exception/GloabalExceptionHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/pojo/Category.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/pojo/Order.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/pojo/OrderItem.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/pojo/Product.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/pojo/ProductImage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/pojo/Property.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/pojo/PropertyValue.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/pojo/Review.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/pojo/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/service/CategoryService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/service/OrderItemService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/service/OrderService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/service/ProductImageService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/service/ProductService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/service/PropertyService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/service/PropertyValueService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/service/ReviewService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/service/UserService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/test/Application.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/test/TestTmall.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/util/ImageUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/util/Page4Navigator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/util/Result.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/web/AdminPageController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/web/CategoryController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/web/ForePageController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/web/ForeRESTController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/web/OrderController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/web/ProductController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/web/ProductImageController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/web/PropertyController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/web/PropertyValueController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/how2java/tmall/web/UserController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/how2java/tmall/tmall_springboot/TmallSpringbootApplicationTests.class" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/interceptor/OtherInterceptor.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/elasticsearch/nodes/0/_state/global-75.st" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/Application.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/Application.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/comparator/ProductAllComparator.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/comparator/ProductAllComparator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/comparator/ProductDateComparator.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/comparator/ProductDateComparator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/comparator/ProductPriceComparator.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/comparator/ProductPriceComparator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/comparator/ProductReviewComparator.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/comparator/ProductReviewComparator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/comparator/ProductSaleCountComparator.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/comparator/ProductSaleCountComparator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/config/CORSConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/config/CORSConfiguration.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/dao/CategoryDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/dao/CategoryDAO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/dao/OrderDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/dao/OrderDAO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/dao/OrderItemDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/dao/OrderItemDAO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/dao/ProductDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/dao/ProductDAO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/dao/ProductImageDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/dao/ProductImageDAO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/dao/PropertyDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/dao/PropertyDAO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/dao/PropertyValueDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/dao/PropertyValueDAO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/dao/ReviewDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/dao/ReviewDAO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/dao/UserDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/dao/UserDAO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/exception/GloabalExceptionHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/exception/GloabalExceptionHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/pojo/Category.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/pojo/Category.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/pojo/Order.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/pojo/Order.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/pojo/OrderItem.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/pojo/OrderItem.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/pojo/Product.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/pojo/Product.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/pojo/ProductImage.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/pojo/ProductImage.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/pojo/Property.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/pojo/Property.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/pojo/PropertyValue.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/pojo/PropertyValue.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/pojo/Review.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/pojo/Review.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/pojo/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/pojo/User.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/service/CategoryService.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/service/CategoryService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/service/OrderItemService.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/service/OrderItemService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/service/OrderService.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/service/OrderService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/service/ProductImageService.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/service/ProductImageService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/service/ProductService.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/service/ProductService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/service/PropertyService.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/service/PropertyService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/service/PropertyValueService.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/service/PropertyValueService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/service/ReviewService.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/service/ReviewService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/service/UserService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/test/Application.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/test/Application.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/test/TestTmall.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/test/TestTmall.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/util/ImageUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/util/ImageUtil.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/util/Page4Navigator.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/util/Page4Navigator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/util/Result.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/util/Result.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/web/AdminPageController.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/web/AdminPageController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/web/CategoryController.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/web/CategoryController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/web/ForePageController.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/web/ForePageController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/web/ForeRESTController.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/web/ForeRESTController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/web/OrderController.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/web/OrderController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/web/ProductController.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/web/ProductController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/web/ProductImageController.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/web/ProductImageController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/web/PropertyController.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/web/PropertyController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/web/PropertyValueController.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/web/PropertyValueController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/how2java/tmall/web/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/web/UserController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/how2java/tmall/tmall_springboot/TmallSpringbootApplicationTests.java" afterPath="$PROJECT_DIR$/src/test/java/com/madingjava/tmall/tmall_springboot/TmallSpringbootApplicationTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/config/WebMvcConfigurer.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/config/WebMvcConfigurer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/web/ForeRESTController.java" afterPath="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/web/ForeRESTController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -168,11 +63,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Application.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/madingjava/tmall/Application.java">
+      <file leaf-file-name="OtherInterceptor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/madingjava/tmall/interceptor/OtherInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="556">
+              <caret line="38" column="74" lean-forward="false" selection-start-line="38" selection-start-column="74" selection-end-line="38" selection-end-column="74" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -180,28 +75,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/madingjava/tmall/test/Application.java">
+      <file leaf-file-name="homePage.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/include/fore/home/homePage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="819">
+              <caret line="97" column="25" lean-forward="true" selection-start-line="97" selection-start-column="25" selection-end-line="97" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestTmall.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/madingjava/tmall/test/TestTmall.java">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fore/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="161">
+              <caret line="7" column="62" lean-forward="false" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tmall_springboot.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tmall_springboot.iml">
+      <file leaf-file-name="top.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/include/fore/top.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -210,28 +105,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2093">
-              <caret line="91" column="20" lean-forward="false" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductAllComparator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/madingjava/tmall/comparator/ProductAllComparator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="8" column="50" lean-forward="false" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <file leaf-file-name="homepageCategoryProducts.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/include/fore/home/homepageCategoryProducts.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -240,8 +115,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/classes/application.properties">
+      <file leaf-file-name="productsAsideCategorys.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/include/fore/home/productsAsideCategorys.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -250,11 +125,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TmallSpringbootApplicationTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/madingjava/tmall/tmall_springboot/TmallSpringbootApplicationTests.java">
+      <file leaf-file-name="search.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/include/fore/search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="391">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cartPage.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/include/fore/cart/cartPage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="543">
+              <caret line="211" column="33" lean-forward="false" selection-start-line="211" selection-start-column="23" selection-end-line="211" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ForeRESTController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/madingjava/tmall/web/ForeRESTController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="585">
+              <caret line="246" column="0" lean-forward="true" selection-start-line="246" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Result.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/madingjava/tmall/util/Result.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -283,6 +190,10 @@
       <find>delete</find>
       <find>jump</find>
       <find>how2</find>
+      <find>cartPageRegisterListeners</find>
+      <find>linkDefaultActions</find>
+      <find>Result</find>
+      <find>forechange</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -340,11 +251,13 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/include/fore/cart.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/include/fore/modal4deleteConfirm.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/how2java/tmall/web/ForeRESTController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/include/fore/cart/cartPage.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/comparator/ProductAllComparator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/interceptor/LoginInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/config/WebMvcConfigurer.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/config/WebMvcConfigurer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/interceptor/OtherInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/include/fore/cart/cartPage.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/madingjava/tmall/web/ForeRESTController.java" />
       </list>
     </option>
   </component>
@@ -383,8 +296,8 @@
     <option name="vmOptions" value="-DarchetypeCatalog=local" />
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="61" />
-    <option name="y" value="-16" />
+    <option name="x" value="353" />
+    <option name="y" value="-13" />
     <option name="width" value="1847" />
     <option name="height" value="880" />
   </component>
@@ -404,6 +317,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -462,6 +376,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="tmall" type="462c0819:PsiDirectoryNode" />
+              <item name="interceptor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tmall_springboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tmall_springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tmall" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -478,6 +401,15 @@
               <item name="tmall_springboot" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tmall" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tmall_springboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tmall_springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -487,6 +419,67 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tmall_springboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tmall_springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="fore" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tmall_springboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tmall_springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tmall_springboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tmall_springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="fore" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tmall_springboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tmall_springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="fore" type="462c0819:PsiDirectoryNode" />
+              <item name="cart" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tmall_springboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tmall_springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="fore" type="462c0819:PsiDirectoryNode" />
+              <item name="category" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tmall_springboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tmall_springboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="fore" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tmall_springboot" type="b2602c69:ProjectViewProjectNode" />
@@ -554,9 +547,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="Scratches" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -568,6 +559,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -831,12 +823,15 @@
       <workItem from="1599288898937" duration="27115000" />
       <workItem from="1599554299907" duration="1913000" />
       <workItem from="1599633060287" duration="18418000" />
-      <workItem from="1599707864203" duration="614000" />
+      <workItem from="1599707864203" duration="775000" />
+      <workItem from="1599712584278" duration="105000" />
+      <workItem from="1599713246359" duration="1238000" />
+      <workItem from="1599720407609" duration="5053000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136165000" />
+    <option name="totallyTimeSpent" value="142722000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -849,6 +844,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -866,22 +862,22 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3492927" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21980414" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19509594" sideWeight="0.84615386" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21748401" sideWeight="0.82147837" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19509594" sideWeight="0.15384616" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21748401" sideWeight="0.17852162" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19296375" sideWeight="0.14036997" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18283582" sideWeight="0.17627856" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52230686" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -897,104 +893,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fore/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/include/fore/registerPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/madingjava/tmall/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/madingjava/tmall/dao/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="6" column="38" lean-forward="true" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/madingjava/tmall/service/CategoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="30" column="27" lean-forward="false" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/data/spring-data-commons/1.13.9.RELEASE/spring-data-commons-1.13.9.RELEASE.jar!/org/springframework/data/repository/PagingAndSortingRepository.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/data/spring-data-jpa/1.11.9.RELEASE/spring-data-jpa-1.11.9.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="16" column="110" lean-forward="false" selection-start-line="16" selection-start-column="110" selection-end-line="16" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/data/spring-data-commons/1.13.9.RELEASE/spring-data-commons-1.13.9.RELEASE.jar!/org/springframework/data/repository/query/QueryByExampleExecutor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/madingjava/tmall/pojo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/data/spring-data-commons/1.13.9.RELEASE/spring-data-commons-1.13.9.RELEASE.jar!/org/springframework/data/domain/Example.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/springBoot_project/jdk/src.zip!/java/util/Comparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1219">
-          <caret line="191" column="6" lean-forward="true" selection-start-line="191" selection-start-column="6" selection-end-line="191" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/include/fore/registerSuccessPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/include/fore/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="85" lean-forward="false" selection-start-line="10" selection-start-column="85" selection-end-line="10" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/include/fore/searchPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/madingjava/tmall/web/OrderController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -1058,20 +956,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/include/fore/home/homePage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2139">
-          <caret line="93" column="11" lean-forward="false" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fore/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="62" lean-forward="false" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/madingjava/tmall/service/ProductImageService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="458">
@@ -1128,24 +1012,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-webmvc/4.3.13.RELEASE/spring-webmvc-4.3.13.RELEASE.jar!/org/springframework/web/servlet/HandlerInterceptor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar!/org/apache/commons/lang/StringUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26818">
           <caret line="1236" column="25" lean-forward="false" selection-start-line="1236" selection-start-column="25" selection-end-line="1236" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/include/fore/cart/cartPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="282" column="0" lean-forward="false" selection-start-line="282" selection-start-column="0" selection-end-line="282" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1170,22 +1040,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/madingjava/tmall/config/WebMvcConfigurer.java">
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.5.9.RELEASE/spring-boot-autoconfigure-1.5.9.RELEASE.jar!/org/springframework/boot/autoconfigure/SpringBootApplication.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="78" lean-forward="false" selection-start-line="18" selection-start-column="78" selection-end-line="18" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-60">
+          <caret line="35" column="18" lean-forward="false" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/madingjava/tmall/web/ForeRESTController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/madingjava/tmall/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="207">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-webmvc/4.3.13.RELEASE/spring-webmvc-4.3.13.RELEASE.jar!/org/springframework/web/servlet/HandlerInterceptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/madingjava/tmall/test/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/madingjava/tmall/test/TestTmall.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmall_springboot.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2093">
+          <caret line="91" column="20" lean-forward="false" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1193,6 +1097,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="8" column="50" lean-forward="false" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1213,7 +1125,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tmall_springboot.iml">
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/8.5.23/tomcat-embed-core-8.5.23.jar!/org/apache/catalina/core/ApplicationHttpRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-736">
+          <caret line="37" column="21" lean-forward="false" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+          <folding>
+            <element signature="e#5681#5682#0" expanded="true" />
+            <element signature="e#5720#5721#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/8.5.23/tomcat-embed-core-8.5.23.jar!/javax/servlet/http/HttpServletRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="40" column="11" lean-forward="false" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/madingjava/tmall/service/CategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/include/fore/home/categoryMenu.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1221,38 +1160,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/madingjava/tmall/test/Application.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/include/fore/home/categoryAndcarousel.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="-598">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/madingjava/tmall/test/TestTmall.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/include/fore/home/carousel.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="-184">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.5.9.RELEASE/spring-boot-autoconfigure-1.5.9.RELEASE.jar!/org/springframework/boot/autoconfigure/SpringBootApplication.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/madingjava/tmall/config/WebMvcConfigurer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="35" column="18" lean-forward="false" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+        <state relative-caret-position="460">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="e#566#567#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/include/fore/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2093">
-          <caret line="91" column="20" lean-forward="false" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
+        <state relative-caret-position="-1620">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/include/fore/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1260,10 +1203,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/madingjava/tmall/Application.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/include/fore/home/homepageCategoryProducts.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/include/fore/home/productsAsideCategorys.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/include/fore/home/homePage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="819">
+          <caret line="97" column="25" lean-forward="true" selection-start-line="97" selection-start-column="25" selection-end-line="97" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fore/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="62" lean-forward="false" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/include/fore/top.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/madingjava/tmall/interceptor/OtherInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="38" column="74" lean-forward="false" selection-start-line="38" selection-start-column="74" selection-end-line="38" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/include/fore/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/madingjava/tmall/util/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/include/fore/cart/cartPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="211" column="33" lean-forward="false" selection-start-line="211" selection-start-column="23" selection-end-line="211" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/madingjava/tmall/web/ForeRESTController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="246" column="0" lean-forward="true" selection-start-line="246" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
