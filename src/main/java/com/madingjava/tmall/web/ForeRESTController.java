@@ -4,11 +4,13 @@ import com.madingjava.tmall.comparator.*;
 import com.madingjava.tmall.pojo.*;
 import com.madingjava.tmall.service.*;
 import com.madingjava.tmall.util.Result;
+import org.apache.commons.lang.math.RandomUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.HtmlUtils;
 
 import javax.servlet.http.HttpSession;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 @RestController
@@ -27,7 +29,8 @@ public class ForeRESTController {
     OrderItemService orderItemService;
     @Autowired
     ReviewService reviewService;
-
+    @Autowired
+    OrderService orderService;
 
     @GetMapping("/forehome")
     public Object home() {
@@ -35,9 +38,9 @@ public class ForeRESTController {
         productService.fill(cs);
         productService.fillByRow(cs);
         categoryService.removeCategoryFromProduct(cs);
-        
+
         return cs;
-    }    
+    }
     @PostMapping("/foreregister")
     public Object register(@RequestBody User user) {
         String name =  user.getName();
@@ -45,17 +48,17 @@ public class ForeRESTController {
         name = HtmlUtils.htmlEscape(name);
         user.setName(name);
         boolean exist = userService.isExist(name);
-            
+
         if(exist){
             String message ="用户名已经被使用,不能使用";
             return Result.fail(message);
         }
-        
-		user.setPassword(password);
-		
+
+        user.setPassword(password);
+
         userService.add(user);
-        
-    	return Result.success();
+
+        return Result.success();
     }
 
     @PostMapping("/forelogin")
@@ -87,8 +90,6 @@ public class ForeRESTController {
         List<Review> reviews = reviewService.list(product);
         productService.setSaleAndReviewNumber(product);
         productImageService.setFirstProdutImage(product);
-
-
 
         Map<String,Object> map= new HashMap<>();
         map.put("product", product);
@@ -201,14 +202,11 @@ public class ForeRESTController {
         map.put("total", total);
         return Result.success(map);
     }
-
-
     @GetMapping("foreaddCart")
     public Object addCart(int pid, int num, HttpSession session) {
         buyoneAndAddCart(pid,num,session);
         return Result.success();
     }
-
     @GetMapping("forecart")
     public Object cart(HttpSession session) {
         User user =(User)  session.getAttribute("user");
@@ -233,17 +231,41 @@ public class ForeRESTController {
         }
         return Result.success();
     }
-
-
     @GetMapping("foredeleteOrderItem")
-    public Object deleteOrderItem(HttpSession session , int oiid){
-        User user = (User)session.getAttribute("user");
-        if(user == null){
+    public Object deleteOrderItem(HttpSession session,int oiid){
+        User user =(User)  session.getAttribute("user");
+        if(null==user)
             return Result.fail("未登录");
-        }
         orderItemService.delete(oiid);
         return Result.success();
     }
+    @PostMapping("forecreateOrder")
+    public Object createOrder(@RequestBody Order order,HttpSession session){
+        User user =(User)  session.getAttribute("user");
+        if(null==user)
+            return Result.fail("未登录");
+        String orderCode = new SimpleDateFormat("yyyyMMddHHmmssSSS").format(new Date()) + RandomUtils.nextInt(10000);
+        order.setOrderCode(orderCode);
+        order.setCreateDate(new Date());
+        order.setUser(user);
+        order.setStatus(OrderService.waitPay);
+        List<OrderItem> ois= (List<OrderItem>)  session.getAttribute("ois");
 
+        float total =orderService.add(order,ois);
+
+        Map<String,Object> map = new HashMap<>();
+        map.put("oid", order.getId());
+        map.put("total", total);
+
+        return Result.success(map);
+    }
+
+    @GetMapping("forepayed")
+    public Object payed(int oid) {
+        Order order = orderService.get(oid);
+        order.setStatus(OrderService.waitDelivery);
+        order.setPayDate(new Date());
+        orderService.update(order);
+        return order;
+    }
 }
-
