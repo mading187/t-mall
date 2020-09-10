@@ -40,16 +40,13 @@
                 listSingles:function(start){
                     var url =  "products/"+pid+"/"+this.uri+"?type=single";
                     axios.get(url).then(function(response) {
-
                         vue.singleProductImages = response.data;
-                        console.info(vue.singleProductImages)
                     });
                 },
                 listDetails:function(start){
                     var url =  "products/"+pid+"/"+this.uri+"?type=detail";
                     axios.get(url).then(function(response) {
                         vue.detailProductImages = response.data;
-                        console.info(vue.detailProductImages)
                     });
                 },
                 addSingle: function () {

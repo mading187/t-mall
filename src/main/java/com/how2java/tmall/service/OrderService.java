@@ -13,6 +13,9 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * @author D
+ */
 @Service
 public class OrderService {
 	public static final String waitPay = "waitPay";
@@ -38,6 +41,11 @@ public class OrderService {
 		}
 	}
 
+
+	/**
+	 * 将orderItem中的orfer置空，因为order里面也有orderItem,不置空会造成无限循环
+	 * @param order
+	 */
 	private void removeOrderFromOrderItem(Order order) {
 		List<OrderItem> orderItems= order.getOrderItems();
 		for (OrderItem orderItem : orderItems) {

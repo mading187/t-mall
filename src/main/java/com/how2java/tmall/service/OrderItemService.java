@@ -2,6 +2,7 @@ package com.how2java.tmall.service;
 
 import com.how2java.tmall.dao.OrderItemDAO;
 import com.how2java.tmall.pojo.Order;
+import com.how2java.tmall.pojo.User;
 import com.how2java.tmall.pojo.OrderItem;
 import com.how2java.tmall.pojo.Product;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -70,6 +71,9 @@ public class OrderItemService {
 	}
 	public List<OrderItem> listByOrder(Order order) {
 		return orderItemDAO.findByOrderOrderByIdDesc(order);
+	}
+	public List<OrderItem> listByUser(User user) {
+		return orderItemDAO.findByUserAndOrderIsNull(user);
 	}
 
 
