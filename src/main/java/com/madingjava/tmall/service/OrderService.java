@@ -3,6 +3,7 @@ package com.madingjava.tmall.service;
 import com.madingjava.tmall.dao.OrderDAO;
 import com.madingjava.tmall.pojo.Order;
 import com.madingjava.tmall.pojo.OrderItem;
+import com.madingjava.tmall.pojo.User;
 import com.madingjava.tmall.util.Page4Navigator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -76,4 +77,23 @@ public class OrderService {
 	public void add(Order order) {
 		orderDAO.save(order);
 	}
+
+	public List<Order> listByUserWithoutDelete(User user) {
+		List<Order> orders = listByUserAndNotDeleted(user);
+		orderItemService.fill(orders);
+		return orders;
+	}
+
+	public List<Order> listByUserAndNotDeleted(User user) {
+		return orderDAO.findByUserAndStatusNotOrderByIdDesc(user, OrderService.delete);
+	}
+
+	public void cacl(Order order){
+		List<OrderItem> orderItems = order.getOrderItems();
+		float total = 0;
+		for (OrderItem orderItem :orderItems){
+			total += orderItem.getProduct().getPromotePrice()*orderItem.getNumber();
+		}
+	}
+
 }
