@@ -4,7 +4,11 @@ import com.madingjava.tmall.dao.ProductDAO;
 import com.madingjava.tmall.pojo.Category;
 import com.madingjava.tmall.pojo.Product;
 import com.madingjava.tmall.util.Page4Navigator;
+import com.madingjava.tmall.util.SpringContextUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheConfig;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -15,37 +19,42 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
+@CacheConfig(cacheNames="products")
 public class ProductService  {
-	
-	@Autowired
-    ProductDAO productDAO;
-	@Autowired CategoryService categoryService;
+
+	@Autowired ProductDAO productDAO;
 	@Autowired ProductImageService productImageService;
+	@Autowired CategoryService categoryService;
 	@Autowired OrderItemService orderItemService;
 	@Autowired ReviewService reviewService;
 
+	@CacheEvict(allEntries=true)
 	public void add(Product bean) {
 		productDAO.save(bean);
 	}
 
+	@CacheEvict(allEntries=true)
 	public void delete(int id) {
 		productDAO.delete(id);
 	}
 
+	@Cacheable(key="'products-one-'+ #p0")
 	public Product get(int id) {
 		return productDAO.findOne(id);
 	}
 
+	@CacheEvict(allEntries=true)
 	public void update(Product bean) {
 		productDAO.save(bean);
 	}
 
-	public Page4Navigator<Product> list(int cid, int start, int size, int navigatePages) {
-    	Category category = categoryService.get(cid);
-    	Sort sort = new Sort(Sort.Direction.DESC, "id");
-    	Pageable pageable = new PageRequest(start, size, sort);    	
-    	Page<Product> pageFromJPA =productDAO.findByCategory(category,pageable);
-    	return new Page4Navigator<>(pageFromJPA,navigatePages);
+	@Cacheable(key="'products-cid-'+#p0+'-page-'+#p1 + '-' + #p2 ")
+	public Page4Navigator<Product> list(int cid, int start, int size,int navigatePages) {
+		Category category = categoryService.get(cid);
+		Sort sort = new Sort(Sort.Direction.DESC, "id");
+		Pageable pageable = new PageRequest(start, size, sort);
+		Page<Product> pageFromJPA =productDAO.findByCategory(category,pageable);
+		return new Page4Navigator<>(pageFromJPA,navigatePages);
 	}
 
 	public void fill(List<Category> categorys) {
@@ -53,12 +62,18 @@ public class ProductService  {
 			fill(category);
 		}
 	}
+
+	@Cacheable(key="'products-cid-'+ #p0.id")
+	public List<Product> listByCategory(Category category){
+		return productDAO.findByCategoryOrderById(category);
+	}
+
 	public void fill(Category category) {
-		List<Product> products = listByCategory(category);
+		ProductService productService = SpringContextUtil.getBean(ProductService.class);
+		List<Product> products = productService.listByCategory(category);
 		productImageService.setFirstProdutImages(products);
 		category.setProducts(products);
 	}
-
 
 	public void fillByRow(List<Category> categorys) {
 		int productNumberEachRow = 8;
@@ -75,20 +90,14 @@ public class ProductService  {
 		}
 	}
 
-	public List<Product> listByCategory(Category category){
-		return productDAO.findByCategoryOrderById(category);
-	}
-
 	public void setSaleAndReviewNumber(Product product) {
 		int saleCount = orderItemService.getSaleCount(product);
 		product.setSaleCount(saleCount);
-
 
 		int reviewCount = reviewService.getCount(product);
 		product.setReviewCount(reviewCount);
 
 	}
-
 
 	public void setSaleAndReviewNumber(List<Product> products) {
 		for (Product product : products)
