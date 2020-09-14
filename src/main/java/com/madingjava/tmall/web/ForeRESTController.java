@@ -5,6 +5,12 @@ import com.madingjava.tmall.pojo.*;
 import com.madingjava.tmall.service.*;
 import com.madingjava.tmall.util.Result;
 import org.apache.commons.lang.math.RandomUtils;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.AuthenticationException;
+import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.crypto.SecureRandomNumberGenerator;
+import org.apache.shiro.crypto.hash.SimpleHash;
+import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.HtmlUtils;
@@ -54,7 +60,14 @@ public class ForeRESTController {
             return Result.fail(message);
         }
 
-        user.setPassword(password);
+        String salt = new SecureRandomNumberGenerator().nextBytes().toString();
+        int times =2;
+        String algorithmName = "md5";
+
+        String encodedPassword = new SimpleHash(algorithmName , password , salt , times).toString();
+
+        user.setSalt(salt);
+        user.setPassword(encodedPassword);
 
         userService.add(user);
 
@@ -66,16 +79,20 @@ public class ForeRESTController {
         String name =  userParam.getName();
         name = HtmlUtils.htmlEscape(name);
 
-        User user =userService.get(name,userParam.getPassword());
-        if(null==user){
-            String message ="账号密码错误";
+        Subject subject = SecurityUtils.getSubject();
+        UsernamePasswordToken token = new UsernamePasswordToken(name , userParam.getPassword());
+        try{
+            subject.login(token);
+            User user = userService.getByName(name);
+
+            session.setAttribute("user" , user);
+            return Result.success();
+        }catch(AuthenticationException e){
+            String message = "账号密码错误";
             return Result.fail(message);
         }
-        else{
-            session.setAttribute("user", user);
-            return Result.success();
-        }
     }
+
 
     @GetMapping("/foreproduct/{pid}")
     public Object product(@PathVariable("pid") int pid) {
@@ -101,10 +118,15 @@ public class ForeRESTController {
 
     @GetMapping("forecheckLogin")
     public Object checkLogin( HttpSession session) {
-        User user =(User)  session.getAttribute("user");
-        if(null!=user)
+
+        Subject subject = SecurityUtils.getSubject();
+        if(subject.isAuthenticated()){
             return Result.success();
-        return Result.fail("未登录");
+        } else {
+            return Result.fail("未登录");
+        }
+
+
     }
     @GetMapping("forecategory/{cid}")
     public Object category(@PathVariable int cid,String sort) {
@@ -279,7 +301,7 @@ public class ForeRESTController {
         orderService.removeOrderFromOrderItem(os);
         return os;
     }
-
+//
 //    @GetMapping("foreconfirmPay")
 //    public Object confirmPay(int oid) {
 //        Order o = orderService.get(oid);

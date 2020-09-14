@@ -1,7 +1,8 @@
 package com.madingjava.tmall.interceptor;
 
-import com.madingjava.tmall.pojo.User;
 import org.apache.commons.lang.StringUtils;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.subject.Subject;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -51,9 +52,8 @@ public class LoginInterceptor implements HandlerInterceptor{
         String page = uri;
 
         if(beginWith(page , requireAuthPages)){
-            User user = (User)session.getAttribute("user");
-            if(user == null){
-                //说明未登录状态
+            Subject subject = SecurityUtils.getSubject();
+            if(!subject.isAuthenticated()){
                 httpServletResponse.sendRedirect("login");
                 return false;
             }
